@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Welcome to RelyanceAI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+      background: linear-gradient(135deg, #2e1065 0%, #0ea5e9 100%);
+      min-height: 100vh;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 80vh;
+      text-align: center;
+    }
+    .welcome-title {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 1px;
+      margin-top: 80px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 1.5em;
+      color: #cfeffd;
+      margin-bottom: 32px;
+    }
+    .logo {
+      width: 78px;
+      height: 78px;
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px auto;
+      font-size: 2.2em;
+      color: #0ea5e9;
+      box-shadow: 0 4px 24px #0003;
+    }
+    /* Cookie banner styles */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background: #111;
+      color: #fff;
+      padding: 38px 25px 30px 25px;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.2);
+      font-family: inherit;
+      z-index: 9999;
+    }
+    #banner-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+    #banner-desc {
+      font-size: 1.11em;
+      margin-bottom: 26px;
+    }
+    .banner-btn-group {
+      display: flex;
+      gap: 16px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .banner-btn {
+      background: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+      font-size: 1.05em;
+    }
+    .banner-btn:hover,
+    .banner-btn:focus {
+      background: #fff;
+      color: #111;
+    }
+    @media (max-width: 600px) {
+      .main-container { min-height: 60vh; }
+      .logo { width: 54px; height: 54px; font-size: 1.3em; }
+      .welcome-title { font-size: 2.1em; }
+      .subtitle { font-size: 1em; }
+      #cookie-banner { font-size: 0.96em; padding: 20px 10px 16px 10px; }
+      .banner-btn { font-size: 0.95em; padding: 12px 10px; min-width: 124px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="logo">RAI</div>
+    <div class="welcome-title">Welcome to RelyanceAI</div>
+    <div class="subtitle">Consent Management: Simplified With AI-Powered Control.</div>
+  </div>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner">
+    <div id="banner-title">Use of Tracking Technologies</div>
+    <div id="banner-desc">
+      We use cookies and similar technologies to enhance your browsing experience and analyze site traffic.
+      By continuing to use our site, you consent to our use of cookies.
+    </div>
+    <div class="banner-btn-group">
+      <button class="banner-btn" onclick="managePreferences()">Manage Preferences</button>
+      <button class="banner-btn" onclick="acceptCookies()">Accept</button>
+      <button class="banner-btn" onclick="doNotSell()">Do not Sell or Share My Personal Information</button>
+    </div>
+  </div>
+  <script>
+    function managePreferences() {
+      alert('Preference management coming soon!');
+    }
+    function acceptCookies() {
+      alert('Cookies Accepted');
+    }
+    function doNotSell() {
+      alert('Your preference to not sell/share personal information has been noted.');
+    }
+  </script>
+</body>
+</html>
+     
