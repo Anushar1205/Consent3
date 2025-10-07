@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script data-relyance-consent-appId="app-e5a827f0-0a0c-5fe5-b441-8fc95e536723" src="https://consent.app.relyancestage.xyz/relyance-agent.js"></script>  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       margin: 0;
@@ -47,8 +47,13 @@
       box-shadow: 0 4px 24px #0003;
     }
     @media (max-width: 600px) {
-      .welcome-title { font-size: 2rem; margin-top: 40px; }
-      .subtitle { font-size: 1.1rem; }
+      .welcome-title {
+        font-size: 2rem;
+        margin-top: 40px;
+      }
+      .subtitle {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
@@ -60,29 +65,39 @@
     <div class="subtitle">Consent Management.</div>
   </div>
   <script>
-    // Internal use only: tracking technologies by site
+    // Internal use only: tracking technologies by site with URLs
     const trackingTechnologies = {
-      flipkart: [
-        "Google Analytics — traffic & behavior analytics",
-        "Facebook Pixel — ad targeting & conversion tracking",
-        "Hotjar — session recordings & heatmaps",
-        "Adobe Audience Manager — audience segmentation"
-      ],
-      myntra: [
-        "Google Ads Conversion Tracking — measure ad performance",
-        "Facebook Pixel — remarketing & conversions",
-        "Criteo — dynamic retargeting",
-        "Mixpanel — product analytics & funnels"
-      ],
-      amazon: [
-        "Amazon Advertising (first-party) — recommendation & ad delivery",
-        "Google Ads / DoubleClick — display advertising",
-        "Amazon DSP — programmatic ad placements",
-        "Proprietary telemetry — personalization & recommendations"
-      ]
+      ebay: {
+        url: "https://www.ebay.com",
+        tech: [
+          "Google Analytics — traffic analysis",
+          "Facebook Pixel — retargeting and conversion",
+          "Adobe Analytics — user behavior",
+          "Oracle BlueKai — audience targeting"
+        ]
+      },
+      walmart: {
+        url: "https://www.walmart.com",
+        tech: [
+          "Google Tag Manager — tracking management",
+          "Facebook Pixel — ad measurement",
+          "Criteo — retargeting ads",
+          "Mixpanel — product interaction analytics"
+        ]
+      },
+      amazon: {
+        url: "https://www.amazon.com",
+        tech: [
+          "Amazon Advertising (first-party) — recommendation & ad delivery",
+          "Google Ads / DoubleClick — display advertising",
+          "Amazon DSP — programmatic ad placements",
+          "Proprietary telemetry — personalization & recommendations"
+        ]
+      }
     };
-    // Example use: log to console
-    console.log("Tracking technologies by site:", trackingTechnologies);
+
+    // Example use: log to console with URLs
+    console.log("Tracking technologies by site with URLs:", trackingTechnologies);
   </script>
 </body>
 </html>
