@@ -1,13 +1,15 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
- <script data-relyance-consent-appId="app-72132482-2a2a-5609-9de7-0797e329e4dc" src="https://consent.app.relyancestage.xyz/relyance-agent.js"></script>  <meta charset="UTF-8">
+  <script data-relyance-consent-appId="app-65870c7a-2886-573e-8f85-ad2c91d70e56" src="https://consent.app.relyancestage.xyz/relyance-agent.js"></script>
+  <title>Welcome to RelyanceAI</title>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-      background: linear-gradient(135deg, #2e1065 0%, #0ea5e9 100%);
+      background: #87CEFA; /* dark blue */
       min-height: 100vh;
       color: #fff;
       overflow-x: hidden;
@@ -29,7 +31,7 @@
     }
     .subtitle {
       font-size: 1.5em;
-      color: #cfeffd;
+      color: #CFEFFD;
       margin-bottom: 32px;
     }
     .logo {
@@ -42,16 +44,53 @@
       justify-content: center;
       margin: 0 auto 28px auto;
       font-size: 2.2em;
-      color: #0ea5e9;
+      color: #0EA5E9;
       box-shadow: 0 4px 24px #0003;
+    }
+    @media (max-width: 600px) {
+      .welcome-title { font-size: 2rem; margin-top: 40px; }
+      .subtitle { font-size: 1.1rem; }
     }
   </style>
 </head>
 <body>
   <div class="main-container">
     <div class="logo">RAI</div>
-    <div class="welcome-title">Welcome to RelyanceAI</div>
-    <div class="subtitle">Consent Management: Simplified With AI-Powered Control.</div>
+    <div class="welcome-title">Welcome to Relyance AI</div>
+    <div class="subtitle">Consent Management.</div>
   </div>
+  <script>
+    // Internal use only: tracking technologies by site
+    const trackingTechnologies = {
+      flipkart: [
+        "Google Analytics — traffic & behavior analytics",
+        "Facebook Pixel — ad targeting & conversion tracking",
+        "Hotjar — session recordings & heatmaps",
+        "Adobe Audience Manager — audience segmentation"
+      ],
+      myntra: [
+        "Google Ads Conversion Tracking — measure ad performance",
+        "Facebook Pixel — remarketing & conversions",
+        "Criteo — dynamic retargeting",
+        "Mixpanel — product analytics & funnels"
+      ],
+      amazon: [
+        "Amazon Advertising (first-party) — recommendation & ad delivery",
+        "Google Ads / DoubleClick — display advertising",
+        "Amazon DSP — programmatic ad placements",
+        "Proprietary telemetry — personalization & recommendations"
+      ]
+    };
+    // Example use: log to console
+    console.log("Tracking technologies by site:", trackingTechnologies);
+  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
