@@ -45,51 +45,22 @@
       color: #0ea5e9;
       box-shadow: 0 4px 24px #0003;
     }
-    #cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100vw;
-      background: #111;
-      color: #fff;
-      padding: 38px 25px 30px 25px;
-      box-shadow: 0 -2px 12px rgba(0,0,0,0.2);
-      font-family: inherit;
-      z-index: 9999;
+    .tracking-section {
+      background: rgba(255,255,255,0.1);
+      border-radius: 9px;
+      padding: 28px 22px;
+      max-width: 700px;
+      margin: 36px auto 0 auto;
+      color: #f5faff;
+      font-size: 1.1em;
+      box-shadow: 0 4px 18px #0002;
     }
-    #banner-title {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 18px;
+    .tracking-section ul {
+      text-align: left;
+      margin-left: 30px;
     }
-    #banner-desc {
-      font-size: 1.11em;
-      margin-bottom: 26px;
-    }
-    .banner-btn-group {
-      display: flex;
-      gap: 16px;
-      margin-top: 10px;
-      flex-wrap: wrap;
-    }
-    .banner-btn {
-      background: transparent;
-      border: 2px solid #fff;
-      color: #fff;
-      font-size: 1.05em;
-    }
-    .banner-btn:hover,
-    .banner-btn:focus {
-      background: #fff;
-      color: #111;
-    }
-    @media (max-width: 600px) {
-      .main-container { min-height: 60vh; }
-      .logo { width: 54px; height: 54px; font-size: 1.3em; }
-      .welcome-title { font-size: 2.1em; }
-      .subtitle { font-size: 1em; }
-      #cookie-banner { font-size: 0.96em; padding: 20px 10px 16px 10px; }
-      .banner-btn { font-size: 0.95em; padding: 12px 10px; min-width: 124px;}
+    .tracking-section li {
+      margin-bottom: 12px;
     }
   </style>
 </head>
@@ -98,39 +69,16 @@
     <div class="logo">RAI</div>
     <div class="welcome-title">Welcome to RelyanceAI</div>
     <div class="subtitle">Consent Management: Simplified With AI-Powered Control.</div>
-  </div>
-
-  <!-- Cookie Banner -->
-  <div id="cookie-banner">
-    <div id="banner-title">Use of Tracking Technologies</div>
-    <div id="banner-desc">
-      We use cookies and similar technologies to enhance your browsing experience and analyze site traffic.<br>
-      <br>
-      <b>Examples of tracking on popular sites:</b>
+    <div class="tracking-section">
+      <h2>Tracking Technologies on Popular Websites</h2>
       <ul>
-        <li><b>Amazon:</b> Uses cookies for shopping cart, ads, analytics, and authentication</li>
-        <li><b>YouTube:</b> Uses cookies for video recommendations, analytics, and cross-site tracking</li>
-        <li><b>Facebook:</b> Uses cookies/pixels for targeted advertising, login, analytics, and social engagement</li>
+        <li><b>Amazon:</b> Uses cookies for cart management, browsing history, recommendations, targeted ads, and analytics.</li>
+        <li><b>YouTube:</b> Uses cookies and local storage for video recommendations, ad targeting, watch history, and analytics.</li>
+        <li><b>Facebook:</b> Uses cookies and Facebook Pixel for login, personalized advertising, cross-site activity tracking, and engagement analytics.</li>
+        <li><b>Google:</b> Uses cookies and fingerprinting for search personalization, ads targeting, analytics, and cross-product integration.</li>
+        <li><b>LinkedIn:</b> Uses cookies for authentication, B2B ad targeting, analytics, and social plugin tracking.</li>
       </ul>
-      By continuing to use our site, you consent to our use of cookies.
-    </div>
-    <div class="banner-btn-group">
-      <button class="banner-btn" onclick="managePreferences()">Manage Preferences</button>
-      <button class="banner-btn" onclick="acceptCookies()">Accept</button>
-      <button class="banner-btn" onclick="doNotSell()">Do not Sell or Share My Personal Information</button>
     </div>
   </div>
-  <script>
-    function managePreferences() {
-      alert('Preference management coming soon!');
-    }
-    function acceptCookies() {
-      alert('Cookies Accepted');
-    }
-    function doNotSell() {
-      alert('Your preference to not sell/share personal information has been noted.');
-    }
-  </script>
 </body>
 </html>
-     
